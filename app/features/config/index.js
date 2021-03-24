@@ -6,20 +6,20 @@ export default {
     aboutURL: 'https://jitsi.org/what-is-jitsi/',
 
     /**
-     * The URL to the source code repository.
+     * The URL to the source code repository (for open source aspects)
      */
-    sourceURL: 'https://github.com/jitsi/jitsi-meet-electron',
+    sourceURL: 'https://github.com/optolabs/opto-studio-docs',
 
     /**
      * Application name.
      */
-    appName: 'Jitsi Meet',
+    appName: 'Opto Studio',
 
     /**
     * The prefix for application protocol.
     * You will also need to replace this in package.json.
     */
-    appProtocolPrefix: 'jitsi-meet',
+    appProtocolPrefix: 'opto-studio',
 
     /**
      * The default server URL of Jitsi Meet Deployment that will be used.

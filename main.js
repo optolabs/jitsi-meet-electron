@@ -69,7 +69,7 @@ if (isDev) {
 /**
  * The window object that will load the iframe with Jitsi Meet.
  * IMPORTANT: Must be defined as global in order to not be garbage collected
- * acidentally.
+ * accidentally.
  */
 let mainWindow = null;
 
@@ -188,7 +188,7 @@ function createJitsiMeetWindow() {
         y: windowState.y,
         width: windowState.width,
         height: windowState.height,
-        icon: path.resolve(basePath, './resources/icon.png'),
+        icon: path.resolve(basePath, './resources/logo.png'),
         minWidth: 800,
         minHeight: 600,
         show: false,
@@ -197,7 +197,8 @@ function createJitsiMeetWindow() {
             enableRemoteModule: true,
             contextIsolation: false,
             nativeWindowOpen: true,
-            nodeIntegration: false,
+            // setting nodeIntegration to true enables access to Node API in both Main and renderer processes
+            nodeIntegration: true,
             preload: path.resolve(basePath, './build/preload.js')
         }
     };

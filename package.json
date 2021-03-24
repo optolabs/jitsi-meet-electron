@@ -1,9 +1,9 @@
 {
-  "name": "jitsi-meet-electron",
-  "version": "2.6.1",
-  "description": "Electron application for Jitsi Meet",
+  "name": "opto-studio",
+  "version": "0.0.1",
+  "description": "Electron Application for Opto Studio",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "Opto Studio",
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
     "clean": "rm -rf node_modules build dist",
@@ -17,8 +17,8 @@
     "node": ">=12.0.0"
   },
   "build": {
-    "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "appId": "io.optolabs.opto-studio",
+    "productName": "Opto Studio",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "**/*",
@@ -27,22 +27,22 @@
       "!main.js"
     ],
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "opto-studio.${ext}",
       "category": "public.app-category.video",
       "darkModeSupport": true,
       "hardenedRuntime": true,
       "entitlements": "entitlements.mac.plist",
       "entitlementsInherit": "entitlements.mac.plist",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video)."
+        "NSCameraUsageDescription": "Opto Studio requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "Opto Studio requires access to your microphone in order to make calls (audio/video)."
       }
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
+      "artifactName": "opto-studio-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
-      "executableName": "jitsi-meet",
+      "description": "Opto Studio Desktop App",
+      "executableName": "opto-studio",
       "target": [
         {
           "arch": "x64",
@@ -51,7 +51,7 @@
       ]
     },
     "win": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "opto-studio.${ext}",
       "target": [
         {
           "arch": [
@@ -67,10 +67,10 @@
     },
     "protocols": [
       {
-        "name": "jitsi-protocol",
+        "name": "opto-protocol",
         "role": "Viewer",
         "schemes": [
-          "jitsi-meet"
+          "opto-studio"
         ]
       }
     ]
@@ -80,18 +80,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jitsi/jitsi-meet-electron"
+    "url": "git://github.com/optolabs/opto-studio-electron"
   },
   "keywords": [
     "jingle",
     "webrtc",
     "xmpp",
     "electron",
-    "jitsi-meet"
+    "opto-studio"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "James Graham && Alden Kane - Opto Labs Inc.",
   "readmeFilename": "README.md",
-  "license": "Apache-2.0",
+  "license": "",
   "dependencies": {
     "@atlaskit/button": "10.1.1",
     "@atlaskit/css-reset": "3.0.5",

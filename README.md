@@ -1,6 +1,6 @@
-# Jitsi Meet Electron
+# Opto Studio Electron
 
-Desktop application for [Jitsi Meet] built with [Electron].
+Desktop application for [Opto Studio] built with [Electron].
 
 ![](screenshot.png)
 
@@ -13,27 +13,16 @@ Desktop application for [Jitsi Meet] built with [Electron].
 - Always-On-Top window
 - Support for deeplinks such as `jitsi-meet://myroom` (will open `myroom` on the configured Jitsi instance) or `jitsi-meet://jitsi.mycompany.com/myroom` (will open `myroom` on the Jitsi instance running on `jitsi.mycompany.com`)
 
+
 ## Installation
 
-Download our latest release and you're off to the races!
-
-| Windows | macOS | GNU/Linux (64-bit only) |
-| -- | -- | -- |
-| [Download](https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/jitsi-meet.exe) | [Download](https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/jitsi-meet.dmg) | [Download](https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/jitsi-meet-x86_64.AppImage) |
-
-### Third-Party builds
-
-[<img src="https://flathub.org/assets/badges/flathub-badge-en.svg"
-     alt="Download On Flathub"
-     height="60">](https://flathub.org/apps/details/org.jitsi.jitsi-meet)
-
-### Homebrew
-
-For *macOS* user, you can install the application using the following command:
+Classic installation here, run:
 
 ```
-brew install --cask jitsi-meet
+npm i
+npm start
 ```
+
 
 ### Using it with your own Jitsi Meet installation
 
@@ -174,8 +163,8 @@ Apache 2. See the [LICENSE] file.
 
 ## Community
 
-Jitsi is built by a large community of developers, if you want to participate,
-please join [community forum].
+Opto Studio is used by a large community of ML developers, if you want to participate,
+please join the [community forum].
 
 [Jitsi Meet]: https://github.com/jitsi/jitsi-meet
 [Electron]: https://electronjs.org/
